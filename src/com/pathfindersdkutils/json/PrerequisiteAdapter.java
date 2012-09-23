@@ -13,7 +13,8 @@ import com.google.gson.JsonSerializer;
 import com.pathfindersdk.prerequisites.Prerequisite;
 
 /**
- * The Class PrerequisiteAdapter.
+ * This class allows read/write of Prerequisite objects into JSON, even when using polymorphism.
+ * 
  */
 public class PrerequisiteAdapter implements JsonDeserializer<Prerequisite>,
     JsonSerializer<Prerequisite>

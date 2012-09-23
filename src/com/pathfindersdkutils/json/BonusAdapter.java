@@ -14,7 +14,6 @@ import com.pathfindersdk.bonus.Bonus;
 
 /**
  * This class allows read/write of Bonus objects into JSON, even when using polymorphism.
- * Without an adapter, Bonus objects can be written but the specific type (AbilityBonus, SkillBonus) cannot be resolved when reading.
  * 
  */
 public class BonusAdapter implements JsonSerializer<Bonus>,
