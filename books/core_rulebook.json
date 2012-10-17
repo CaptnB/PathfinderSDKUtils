@@ -1,604 +1,1573 @@
 {
+  "sections": {
+    "Skills": {
+      "type": "SKILLS",
+      "items": [
+        {
+          "keyAbility": "DEX",
+          "untrained": true,
+          "armorCheckPenalty": true,
+          "name": "Acrobatics",
+          "allowed": true
+        },
+        {
+          "keyAbility": "INT",
+          "untrained": true,
+          "armorCheckPenalty": false,
+          "name": "Appraise",
+          "allowed": true
+        },
+        {
+          "keyAbility": "CHA",
+          "untrained": true,
+          "armorCheckPenalty": false,
+          "name": "Bluff",
+          "allowed": true
+        },
+        {
+          "keyAbility": "STR",
+          "untrained": true,
+          "armorCheckPenalty": true,
+          "name": "Climb",
+          "allowed": true
+        },
+        {
+          "keyAbility": "INT",
+          "untrained": true,
+          "armorCheckPenalty": false,
+          "name": "Craft",
+          "allowed": true
+        },
+        {
+          "keyAbility": "CHA",
+          "untrained": true,
+          "armorCheckPenalty": false,
+          "name": "Diplomacy",
+          "allowed": true
+        },
+        {
+          "keyAbility": "DEX",
+          "untrained": false,
+          "armorCheckPenalty": true,
+          "name": "Disable Device",
+          "allowed": true
+        },
+        {
+          "keyAbility": "CHA",
+          "untrained": true,
+          "armorCheckPenalty": false,
+          "name": "Disguise",
+          "allowed": true
+        },
+        {
+          "keyAbility": "DEX",
+          "untrained": true,
+          "armorCheckPenalty": true,
+          "name": "Escape Artist",
+          "allowed": true
+        },
+        {
+          "keyAbility": "DEX",
+          "untrained": true,
+          "armorCheckPenalty": true,
+          "name": "Fly",
+          "allowed": true
+        },
+        {
+          "keyAbility": "CHA",
+          "untrained": false,
+          "armorCheckPenalty": false,
+          "name": "Handle Animal",
+          "allowed": true
+        },
+        {
+          "keyAbility": "WIS",
+          "untrained": true,
+          "armorCheckPenalty": false,
+          "name": "Heal",
+          "allowed": true
+        },
+        {
+          "keyAbility": "CHA",
+          "untrained": true,
+          "armorCheckPenalty": true,
+          "name": "Intimidate",
+          "allowed": true
+        },
+        {
+          "keyAbility": "INT",
+          "untrained": false,
+          "armorCheckPenalty": false,
+          "name": "Knowledge (arcana)",
+          "allowed": true
+        },
+        {
+          "keyAbility": "INT",
+          "untrained": false,
+          "armorCheckPenalty": false,
+          "name": "Knowledge (dungeonneering)",
+          "allowed": true
+        },
+        {
+          "keyAbility": "INT",
+          "untrained": false,
+          "armorCheckPenalty": false,
+          "name": "Knowledge (engineering)",
+          "allowed": true
+        },
+        {
+          "keyAbility": "INT",
+          "untrained": false,
+          "armorCheckPenalty": false,
+          "name": "Knowledge (geography)",
+          "allowed": true
+        },
+        {
+          "keyAbility": "INT",
+          "untrained": false,
+          "armorCheckPenalty": false,
+          "name": "Knowledge (history)",
+          "allowed": true
+        },
+        {
+          "keyAbility": "INT",
+          "untrained": false,
+          "armorCheckPenalty": false,
+          "name": "Knowledge (local)",
+          "allowed": true
+        },
+        {
+          "keyAbility": "INT",
+          "untrained": false,
+          "armorCheckPenalty": false,
+          "name": "Knowledge (nature)",
+          "allowed": true
+        },
+        {
+          "keyAbility": "INT",
+          "untrained": false,
+          "armorCheckPenalty": false,
+          "name": "Knowledge (nobility)",
+          "allowed": true
+        },
+        {
+          "keyAbility": "INT",
+          "untrained": false,
+          "armorCheckPenalty": false,
+          "name": "Knowledge (planes)",
+          "allowed": true
+        },
+        {
+          "keyAbility": "INT",
+          "untrained": false,
+          "armorCheckPenalty": false,
+          "name": "Knowledge (religion)",
+          "allowed": true
+        },
+        {
+          "keyAbility": "INT",
+          "untrained": false,
+          "armorCheckPenalty": false,
+          "name": "Linguistics",
+          "allowed": true
+        },
+        {
+          "keyAbility": "WIS",
+          "untrained": true,
+          "armorCheckPenalty": false,
+          "name": "Perception",
+          "allowed": true
+        },
+        {
+          "keyAbility": "CHA",
+          "untrained": true,
+          "armorCheckPenalty": false,
+          "name": "Perform",
+          "allowed": true
+        },
+        {
+          "keyAbility": "WIS",
+          "untrained": false,
+          "armorCheckPenalty": false,
+          "name": "Profession",
+          "allowed": true
+        },
+        {
+          "keyAbility": "DEX",
+          "untrained": true,
+          "armorCheckPenalty": true,
+          "name": "Ride",
+          "allowed": true
+        },
+        {
+          "keyAbility": "WIS",
+          "untrained": true,
+          "armorCheckPenalty": false,
+          "name": "Sense Motive",
+          "allowed": true
+        },
+        {
+          "keyAbility": "DEX",
+          "untrained": false,
+          "armorCheckPenalty": true,
+          "name": "Sleight of Hand",
+          "allowed": true
+        },
+        {
+          "keyAbility": "INT",
+          "untrained": false,
+          "armorCheckPenalty": false,
+          "name": "Spellcraft",
+          "allowed": true
+        },
+        {
+          "keyAbility": "DEX",
+          "untrained": true,
+          "armorCheckPenalty": true,
+          "name": "Stealth",
+          "allowed": true
+        },
+        {
+          "keyAbility": "WIS",
+          "untrained": true,
+          "armorCheckPenalty": false,
+          "name": "Survival",
+          "allowed": true
+        },
+        {
+          "keyAbility": "STR",
+          "untrained": true,
+          "armorCheckPenalty": true,
+          "name": "Swim",
+          "allowed": true
+        },
+        {
+          "keyAbility": "CHA",
+          "untrained": false,
+          "armorCheckPenalty": false,
+          "name": "Use Magic Device",
+          "allowed": true
+        }
+      ],
+      "name": "Skills",
+      "allowed": true
+    },
+    "Races": {
+      "type": "RACES",
+      "items": [
+        {
+          "type": {
+            "type": "HUMANOID",
+            "subtypes": [
+              "DWARF"
+            ]
+          },
+          "size": "MEDIUM",
+          "visions": [
+            "DARKVISION"
+          ],
+          "baseLanguages": [
+            "COMMON",
+            "DWARVEN"
+          ],
+          "optionalLanguages": [
+            "GIANT",
+            "GNOME",
+            "GOBLIN",
+            "ORC",
+            "TERRAN",
+            "UNDERCOMMON"
+          ],
+          "bonuses": [
+            {
+              "value": 2,
+              "type": "RACIAL",
+              "strategy": {
+                "CLASSNAME": "com.pathfindersdk.bonus.AbilityBonusStrategy",
+                "INSTANCE": {
+                  "abilityType": "CON"
+                }
+              }
+            },
+            {
+              "value": 2,
+              "type": "RACIAL",
+              "strategy": {
+                "CLASSNAME": "com.pathfindersdk.bonus.AbilityBonusStrategy",
+                "INSTANCE": {
+                  "abilityType": "WIS"
+                }
+              }
+            },
+            {
+              "value": -2,
+              "type": "RACIAL",
+              "strategy": {
+                "CLASSNAME": "com.pathfindersdk.bonus.AbilityBonusStrategy",
+                "INSTANCE": {
+                  "abilityType": "CHA"
+                }
+              }
+            }
+          ],
+          "speeds": [
+            {
+              "type": "BASE",
+              "baseScore": 20
+            },
+            {
+              "type": "ARMOR",
+              "baseScore": 20
+            }
+          ],
+          "traits": [
+            {
+              "name": "Slow and Steady"
+            },
+            {
+              "name": "Defensive Training",
+              "bonuses": [
+                {
+                  "value": 4,
+                  "type": "DODGE",
+                  "circumstance": "against Giant subtype.",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.ArmorBonusStrategy",
+                    "INSTANCE": {}
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Greed",
+              "bonuses": [
+                {
+                  "value": 2,
+                  "type": "RACIAL",
+                  "circumstance": "on nonmagical goods that contain precious metals or gemstones.",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SkillBonusStrategy",
+                    "INSTANCE": {
+                      "skillName": "Appraise"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Hatred",
+              "bonuses": [
+                {
+                  "value": 1,
+                  "type": "UNTYPED",
+                  "circumstance": "against humanoid creatures of the orc and goblinoid subtypes.",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.AttackBonusStrategy",
+                    "INSTANCE": {}
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Hardy",
+              "bonuses": [
+                {
+                  "value": 2,
+                  "type": "RACIAL",
+                  "circumstance": "against poison, spells ans spell-like abilities.",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
+                    "INSTANCE": {
+                      "type": "FORTITUDE"
+                    }
+                  }
+                },
+                {
+                  "value": 2,
+                  "type": "RACIAL",
+                  "circumstance": "against poison, spells ans spell-like abilities.",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
+                    "INSTANCE": {
+                      "type": "REFLEX"
+                    }
+                  }
+                },
+                {
+                  "value": 2,
+                  "type": "RACIAL",
+                  "circumstance": "against poison, spells ans spell-like abilities.",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
+                    "INSTANCE": {
+                      "type": "WILL"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Stability",
+              "bonuses": [
+                {
+                  "value": 4,
+                  "type": "RACIAL",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.CmdBonusStrategy",
+                    "INSTANCE": {
+                      "maneuver": "Bull Rush"
+                    }
+                  }
+                },
+                {
+                  "value": 4,
+                  "type": "RACIAL",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.CmdBonusStrategy",
+                    "INSTANCE": {
+                      "maneuver": "Trip"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Stonecunning",
+              "bonuses": [
+                {
+                  "value": 2,
+                  "type": "UNTYPED",
+                  "circumstance": "to notice traps and hidden doors in stone walls or floors.",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SkillBonusStrategy",
+                    "INSTANCE": {
+                      "skillName": "Perception"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "Dwarf",
+          "allowed": true
+        },
+        {
+          "type": {
+            "type": "HUMANOID",
+            "subtypes": [
+              "ELF"
+            ]
+          },
+          "size": "MEDIUM",
+          "visions": [
+            "LOW_LIGHT"
+          ],
+          "baseLanguages": [
+            "COMMON",
+            "ELVEN"
+          ],
+          "optionalLanguages": [
+            "CELESTIAL",
+            "DRACONIC",
+            "GNOLL",
+            "GNOME",
+            "GOBLIN",
+            "ORC",
+            "SYLVAN"
+          ],
+          "bonuses": [
+            {
+              "value": 2,
+              "type": "RACIAL",
+              "strategy": {
+                "CLASSNAME": "com.pathfindersdk.bonus.AbilityBonusStrategy",
+                "INSTANCE": {
+                  "abilityType": "DEX"
+                }
+              }
+            },
+            {
+              "value": 2,
+              "type": "RACIAL",
+              "strategy": {
+                "CLASSNAME": "com.pathfindersdk.bonus.AbilityBonusStrategy",
+                "INSTANCE": {
+                  "abilityType": "INT"
+                }
+              }
+            },
+            {
+              "value": -2,
+              "type": "RACIAL",
+              "strategy": {
+                "CLASSNAME": "com.pathfindersdk.bonus.AbilityBonusStrategy",
+                "INSTANCE": {
+                  "abilityType": "CON"
+                }
+              }
+            }
+          ],
+          "speeds": [
+            {
+              "type": "BASE",
+              "baseScore": 30
+            },
+            {
+              "type": "ARMOR",
+              "baseScore": 20
+            }
+          ],
+          "traits": [
+            {
+              "name": "Elven Immunities",
+              "bonuses": [
+                {
+                  "value": 2,
+                  "type": "RACIAL",
+                  "circumstance": "against enchantment spells and effects.",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
+                    "INSTANCE": {
+                      "type": "FORTITUDE"
+                    }
+                  }
+                },
+                {
+                  "value": 2,
+                  "type": "RACIAL",
+                  "circumstance": "against enchantment spells and effects.",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
+                    "INSTANCE": {
+                      "type": "REFLEX"
+                    }
+                  }
+                },
+                {
+                  "value": 2,
+                  "type": "RACIAL",
+                  "circumstance": "against enchantment spells and effects.",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
+                    "INSTANCE": {
+                      "type": "WILL"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Elven Magic",
+              "bonuses": [
+                {
+                  "value": 2,
+                  "type": "RACIAL",
+                  "circumstance": "to identify the properties of magic items.",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SkillBonusStrategy",
+                    "INSTANCE": {
+                      "skillName": "Spellcraft"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Keen Senses",
+              "bonuses": [
+                {
+                  "value": 2,
+                  "type": "RACIAL",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SkillBonusStrategy",
+                    "INSTANCE": {
+                      "skillName": "Perception"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "Elf",
+          "allowed": true
+        },
+        {
+          "type": {
+            "type": "HUMANOID",
+            "subtypes": [
+              "GNOME"
+            ]
+          },
+          "size": "SMALL",
+          "visions": [
+            "LOW_LIGHT"
+          ],
+          "baseLanguages": [
+            "COMMON",
+            "GNOME",
+            "SYLVAN"
+          ],
+          "optionalLanguages": [
+            "DRACONIC",
+            "DWARVEN",
+            "ELVEN",
+            "GIANT",
+            "GOBLIN",
+            "ORC"
+          ],
+          "bonuses": [
+            {
+              "value": 2,
+              "type": "RACIAL",
+              "strategy": {
+                "CLASSNAME": "com.pathfindersdk.bonus.AbilityBonusStrategy",
+                "INSTANCE": {
+                  "abilityType": "CON"
+                }
+              }
+            },
+            {
+              "value": 2,
+              "type": "RACIAL",
+              "strategy": {
+                "CLASSNAME": "com.pathfindersdk.bonus.AbilityBonusStrategy",
+                "INSTANCE": {
+                  "abilityType": "CHA"
+                }
+              }
+            },
+            {
+              "value": -2,
+              "type": "RACIAL",
+              "strategy": {
+                "CLASSNAME": "com.pathfindersdk.bonus.AbilityBonusStrategy",
+                "INSTANCE": {
+                  "abilityType": "STR"
+                }
+              }
+            }
+          ],
+          "speeds": [
+            {
+              "type": "BASE",
+              "baseScore": 20
+            },
+            {
+              "type": "ARMOR",
+              "baseScore": 15
+            }
+          ],
+          "traits": [
+            {
+              "name": "Defensive Training",
+              "bonuses": [
+                {
+                  "value": 4,
+                  "type": "DODGE",
+                  "circumstance": "against Giant subtype.",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.ArmorBonusStrategy",
+                    "INSTANCE": {}
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Gnome Magic"
+            },
+            {
+              "name": "Hatred",
+              "bonuses": [
+                {
+                  "value": 1,
+                  "type": "UNTYPED",
+                  "circumstance": "against humanoid creatures of the reptilian and goblinoid subtypes.",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.AttackBonusStrategy",
+                    "INSTANCE": {}
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Illusion Resistance",
+              "bonuses": [
+                {
+                  "value": 2,
+                  "type": "RACIAL",
+                  "circumstance": "against illusion spells and effects.",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
+                    "INSTANCE": {
+                      "type": "FORTITUDE"
+                    }
+                  }
+                },
+                {
+                  "value": 2,
+                  "type": "RACIAL",
+                  "circumstance": "against illusion spells and effects.",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
+                    "INSTANCE": {
+                      "type": "REFLEX"
+                    }
+                  }
+                },
+                {
+                  "value": 2,
+                  "type": "RACIAL",
+                  "circumstance": "against illusion spells and effects.",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
+                    "INSTANCE": {
+                      "type": "WILL"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Keen Senses",
+              "bonuses": [
+                {
+                  "value": 2,
+                  "type": "RACIAL",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SkillBonusStrategy",
+                    "INSTANCE": {
+                      "skillName": "Perception"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Obsessive"
+            }
+          ],
+          "name": "Gnome",
+          "allowed": true
+        },
+        {
+          "type": {
+            "type": "HUMANOID",
+            "subtypes": [
+              "ELF",
+              "HUMAN"
+            ]
+          },
+          "size": "MEDIUM",
+          "visions": [
+            "LOW_LIGHT"
+          ],
+          "baseLanguages": [
+            "COMMON",
+            "ELVEN"
+          ],
+          "optionalLanguages": [
+            "ABYSSAL",
+            "AKLO",
+            "AQUAN",
+            "AURAN",
+            "CELESTIAL",
+            "DRACONIC",
+            "DWARVEN",
+            "GIANT",
+            "GNOLL",
+            "GNOME",
+            "GOBLIN",
+            "HALFLING",
+            "IGNAN",
+            "INFERNAL",
+            "ORC",
+            "SYLVAN",
+            "TERRAN",
+            "UNDERCOMMON"
+          ],
+          "bonuses": [
+            {
+              "value": 2,
+              "type": "RACIAL",
+              "strategy": {
+                "CLASSNAME": "com.pathfindersdk.bonus.AbilityBonusStrategy",
+                "INSTANCE": {
+                  "abilityType": "ANY"
+                }
+              }
+            }
+          ],
+          "speeds": [
+            {
+              "type": "BASE",
+              "baseScore": 30
+            },
+            {
+              "type": "ARMOR",
+              "baseScore": 20
+            }
+          ],
+          "traits": [
+            {
+              "name": "Adaptability"
+            },
+            {
+              "name": "Elven Immunities"
+            },
+            {
+              "name": "Keen Senses",
+              "bonuses": [
+                {
+                  "value": 2,
+                  "type": "RACIAL",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SkillBonusStrategy",
+                    "INSTANCE": {
+                      "skillName": "Perception"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Multitalented"
+            }
+          ],
+          "name": "Half-Elf",
+          "allowed": true
+        },
+        {
+          "type": {
+            "type": "HUMANOID",
+            "subtypes": [
+              "HUMAN",
+              "ORC"
+            ]
+          },
+          "size": "MEDIUM",
+          "visions": [
+            "DARKVISION"
+          ],
+          "baseLanguages": [
+            "COMMON",
+            "ORC"
+          ],
+          "optionalLanguages": [
+            "ABYSSAL",
+            "DRACONIC",
+            "GIANT",
+            "GNOLL",
+            "GOBLIN"
+          ],
+          "bonuses": [
+            {
+              "value": 2,
+              "type": "RACIAL",
+              "strategy": {
+                "CLASSNAME": "com.pathfindersdk.bonus.AbilityBonusStrategy",
+                "INSTANCE": {
+                  "abilityType": "ANY"
+                }
+              }
+            }
+          ],
+          "speeds": [
+            {
+              "type": "BASE",
+              "baseScore": 30
+            },
+            {
+              "type": "ARMOR",
+              "baseScore": 20
+            }
+          ],
+          "traits": [
+            {
+              "name": "Intimidating",
+              "bonuses": [
+                {
+                  "value": 2,
+                  "type": "RACIAL",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SkillBonusStrategy",
+                    "INSTANCE": {
+                      "skillName": "Intimidate"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Orc Ferocity"
+            }
+          ],
+          "name": "Half-Orc",
+          "allowed": true
+        },
+        {
+          "type": {
+            "type": "HUMANOID",
+            "subtypes": [
+              "HALFLING"
+            ]
+          },
+          "size": "SMALL",
+          "visions": [
+            "NORMAL"
+          ],
+          "baseLanguages": [
+            "COMMON",
+            "HALFLING"
+          ],
+          "optionalLanguages": [
+            "DWARVEN",
+            "ELVEN",
+            "GNOME",
+            "GOBLIN"
+          ],
+          "bonuses": [
+            {
+              "value": 2,
+              "type": "RACIAL",
+              "strategy": {
+                "CLASSNAME": "com.pathfindersdk.bonus.AbilityBonusStrategy",
+                "INSTANCE": {
+                  "abilityType": "DEX"
+                }
+              }
+            },
+            {
+              "value": 2,
+              "type": "RACIAL",
+              "strategy": {
+                "CLASSNAME": "com.pathfindersdk.bonus.AbilityBonusStrategy",
+                "INSTANCE": {
+                  "abilityType": "CHA"
+                }
+              }
+            },
+            {
+              "value": -2,
+              "type": "RACIAL",
+              "strategy": {
+                "CLASSNAME": "com.pathfindersdk.bonus.AbilityBonusStrategy",
+                "INSTANCE": {
+                  "abilityType": "STR"
+                }
+              }
+            }
+          ],
+          "speeds": [
+            {
+              "type": "BASE",
+              "baseScore": 20
+            },
+            {
+              "type": "ARMOR",
+              "baseScore": 15
+            }
+          ],
+          "traits": [
+            {
+              "name": "Fearless",
+              "bonuses": [
+                {
+                  "value": 2,
+                  "type": "RACIAL",
+                  "circumstance": "against fear. Stacks with Halfling Luck.",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
+                    "INSTANCE": {
+                      "type": "FORTITUDE"
+                    }
+                  }
+                },
+                {
+                  "value": 2,
+                  "type": "RACIAL",
+                  "circumstance": "against fear. Stacks with Halfling Luck.",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
+                    "INSTANCE": {
+                      "type": "REFLEX"
+                    }
+                  }
+                },
+                {
+                  "value": 2,
+                  "type": "RACIAL",
+                  "circumstance": "against fear. Stacks with Halfling Luck.",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
+                    "INSTANCE": {
+                      "type": "WILL"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Halfling Luck",
+              "bonuses": [
+                {
+                  "value": 1,
+                  "type": "RACIAL",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
+                    "INSTANCE": {
+                      "type": "FORTITUDE"
+                    }
+                  }
+                },
+                {
+                  "value": 1,
+                  "type": "RACIAL",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
+                    "INSTANCE": {
+                      "type": "REFLEX"
+                    }
+                  }
+                },
+                {
+                  "value": 1,
+                  "type": "RACIAL",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
+                    "INSTANCE": {
+                      "type": "WILL"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Keen Senses",
+              "bonuses": [
+                {
+                  "value": 2,
+                  "type": "RACIAL",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SkillBonusStrategy",
+                    "INSTANCE": {
+                      "skillName": "Perception"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Sure-Footed",
+              "bonuses": [
+                {
+                  "value": 2,
+                  "type": "RACIAL",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SkillBonusStrategy",
+                    "INSTANCE": {
+                      "skillName": "Acrobatics"
+                    }
+                  }
+                },
+                {
+                  "value": 2,
+                  "type": "RACIAL",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SkillBonusStrategy",
+                    "INSTANCE": {
+                      "skillName": "Climb"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "Halfling",
+          "allowed": true
+        },
+        {
+          "type": {
+            "type": "HUMANOID",
+            "subtypes": [
+              "HUMAN"
+            ]
+          },
+          "size": "MEDIUM",
+          "visions": [
+            "NORMAL"
+          ],
+          "baseLanguages": [
+            "COMMON"
+          ],
+          "optionalLanguages": [
+            "ABYSSAL",
+            "AKLO",
+            "AQUAN",
+            "AURAN",
+            "CELESTIAL",
+            "DRACONIC",
+            "DWARVEN",
+            "ELVEN",
+            "GIANT",
+            "GNOLL",
+            "GNOME",
+            "GOBLIN",
+            "HALFLING",
+            "IGNAN",
+            "INFERNAL",
+            "ORC",
+            "SYLVAN",
+            "TERRAN",
+            "UNDERCOMMON"
+          ],
+          "bonuses": [
+            {
+              "value": 2,
+              "type": "RACIAL",
+              "strategy": {
+                "CLASSNAME": "com.pathfindersdk.bonus.AbilityBonusStrategy",
+                "INSTANCE": {
+                  "abilityType": "ANY"
+                }
+              }
+            }
+          ],
+          "speeds": [
+            {
+              "type": "BASE",
+              "baseScore": 30
+            },
+            {
+              "type": "ARMOR",
+              "baseScore": 20
+            }
+          ],
+          "traits": [
+            {
+              "name": "Bonus Feat"
+            },
+            {
+              "name": "Skilled",
+              "bonuses": [
+                {
+                  "value": 1,
+                  "type": "UNTYPED",
+                  "strategy": {
+                    "CLASSNAME": "com.pathfindersdk.bonus.SkillRankBonusStrategy",
+                    "INSTANCE": {}
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "Human",
+          "allowed": true
+        }
+      ],
+      "name": "Races",
+      "allowed": true
+    },
+    "Classes": {
+      "type": "CLASSES",
+      "items": [
+        {
+          "hitDice": {
+            "numbers": 1,
+            "faces": 12
+          },
+          "skillRanks": 4,
+          "levels": [
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 2,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 0
+            }
+          ],
+          "name": "Barbarian",
+          "allowed": true
+        },
+        {
+          "hitDice": {
+            "numbers": 1,
+            "faces": 8
+          },
+          "skillRanks": 6,
+          "levels": [
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 2,
+              "will": 2
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 1
+            }
+          ],
+          "name": "Bard",
+          "allowed": true
+        },
+        {
+          "hitDice": {
+            "numbers": 1,
+            "faces": 8
+          },
+          "skillRanks": 2,
+          "levels": [
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 2,
+              "reflex": 0,
+              "will": 2
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            }
+          ],
+          "name": "Cleric",
+          "allowed": true
+        }
+      ],
+      "name": "Classes",
+      "allowed": true
+    }
+  },
   "name": "Core Rulebook",
-  "races": [
-    {
-      "name": "Dwarf",
-      "type": {
-        "type": "HUMANOID",
-        "subtypes": [
-          "DWARF"
-        ]
-      },
-      "size": "MEDIUM",
-      "visions": [
-        "DARKVISION"
-      ],
-      "baseLanguages": [
-        "COMMON",
-        "DWARVEN"
-      ],
-      "optionalLanguages": [
-        "GIANT",
-        "GNOME",
-        "GOBLIN",
-        "ORC",
-        "TERRAN",
-        "UNDERCOMMON"
-      ],
-      "abilityBonuses": [
-        {
-          "ability": "CON",
-          "value": 2,
-          "type": "RACIAL"
-        },
-        {
-          "ability": "WIS",
-          "value": 2,
-          "type": "RACIAL"
-        },
-        {
-          "ability": "CHA",
-          "value": -2,
-          "type": "RACIAL"
-        }
-      ],
-      "speeds": [
-        {
-          "type": "BASE",
-          "baseScore": 20
-        },
-        {
-          "type": "ARMOR",
-          "baseScore": 20
-        }
-      ],
-      "traits": [
-        {
-          "name": "Slow and Steady",
-          "bonuses": []
-        },
-        {
-          "name": "Defensive Training",
-          "bonuses": []
-        },
-        {
-          "name": "Greed",
-          "bonuses": []
-        },
-        {
-          "name": "Hatred",
-          "bonuses": []
-        },
-        {
-          "name": "Hardy",
-          "bonuses": []
-        },
-        {
-          "name": "Stability",
-          "bonuses": []
-        },
-        {
-          "name": "Stonecunning",
-          "bonuses": []
-        }
-      ]
-    },
-    {
-      "name": "Elf",
-      "type": {
-        "type": "HUMANOID",
-        "subtypes": [
-          "HUMAN"
-        ]
-      },
-      "size": "MEDIUM",
-      "visions": [
-        "LOW_LIGHT"
-      ],
-      "baseLanguages": [
-        "COMMON",
-        "ELVEN"
-      ],
-      "optionalLanguages": [
-        "CELESTIAL",
-        "DRACONIC",
-        "GNOLL",
-        "GNOME",
-        "GOBLIN",
-        "ORC",
-        "SYLVAN"
-      ],
-      "abilityBonuses": [
-        {
-          "ability": "DEX",
-          "value": 2,
-          "type": "RACIAL"
-        },
-        {
-          "ability": "INT",
-          "value": 2,
-          "type": "RACIAL"
-        },
-        {
-          "ability": "CON",
-          "value": -2,
-          "type": "RACIAL"
-        }
-      ],
-      "speeds": [
-        {
-          "type": "BASE",
-          "baseScore": 30
-        },
-        {
-          "type": "ARMOR",
-          "baseScore": 20
-        }
-      ]
-    },
-    {
-      "name": "Gnome",
-      "type": {
-        "type": "HUMANOID",
-        "subtypes": [
-          "HUMAN"
-        ]
-      },
-      "size": "SMALL",
-      "visions": [
-        "LOW_LIGHT"
-      ],
-      "baseLanguages": [
-        "COMMON",
-        "GNOME",
-        "SYLVAN"
-      ],
-      "optionalLanguages": [
-        "DRACONIC",
-        "DWARVEN",
-        "ELVEN",
-        "GIANT",
-        "GOBLIN",
-        "ORC"
-      ],
-      "abilityBonuses": [
-        {
-          "ability": "CON",
-          "value": 2,
-          "type": "RACIAL"
-        },
-        {
-          "ability": "CHA",
-          "value": 2,
-          "type": "RACIAL"
-        },
-        {
-          "ability": "STR",
-          "value": -2,
-          "type": "RACIAL"
-        }
-      ],
-      "speeds": [
-        {
-          "type": "BASE",
-          "baseScore": 20
-        },
-        {
-          "type": "ARMOR",
-          "baseScore": 15
-        }
-      ]
-    },
-    {
-      "name": "Half-Elf",
-      "type": {
-        "type": "HUMANOID",
-        "subtypes": [
-          "HUMAN"
-        ]
-      },
-      "size": "MEDIUM",
-      "visions": [
-        "LOW_LIGHT"
-      ],
-      "baseLanguages": [
-        "COMMON",
-        "ELVEN"
-      ],
-      "optionalLanguages": [
-        "ABYSSAL",
-        "AKLO",
-        "AQUAN",
-        "AURAN",
-        "CELESTIAL",
-        "DRACONIC",
-        "DWARVEN",
-        "GIANT",
-        "GNOLL",
-        "GNOME",
-        "GOBLIN",
-        "HALFLING",
-        "IGNAN",
-        "INFERNAL",
-        "ORC",
-        "SYLVAN",
-        "TERRAN",
-        "UNDERCOMMON"
-      ],
-      "abilityBonuses": [
-        {
-          "ability": "ANY",
-          "value": 2,
-          "type": "RACIAL"
-        }
-      ],
-      "speeds": [
-        {
-          "type": "BASE",
-          "baseScore": 30
-        },
-        {
-          "type": "ARMOR",
-          "baseScore": 20
-        }
-      ]
-    },
-    {
-      "name": "Half-Orc",
-      "type": {
-        "type": "HUMANOID",
-        "subtypes": [
-          "HUMAN"
-        ]
-      },
-      "size": "MEDIUM",
-      "visions": [
-        "DARKVISION"
-      ],
-      "baseLanguages": [
-        "COMMON",
-        "ORC"
-      ],
-      "optionalLanguages": [
-        "ABYSSAL",
-        "DRACONIC",
-        "GIANT",
-        "GNOLL",
-        "GOBLIN"
-      ],
-      "abilityBonuses": [
-        {
-          "ability": "ANY",
-          "value": 2,
-          "type": "RACIAL"
-        }
-      ],
-      "speeds": [
-        {
-          "type": "BASE",
-          "baseScore": 30
-        },
-        {
-          "type": "ARMOR",
-          "baseScore": 20
-        }
-      ]
-    },
-    {
-      "name": "Halfling",
-      "type": {
-        "type": "HUMANOID",
-        "subtypes": [
-          "HUMAN"
-        ]
-      },
-      "size": "SMALL",
-      "visions": [
-        "NORMAL"
-      ],
-      "baseLanguages": [
-        "COMMON",
-        "HALFLING"
-      ],
-      "optionalLanguages": [
-        "DWARVEN",
-        "ELVEN",
-        "GNOME",
-        "GOBLIN"
-      ],
-      "abilityBonuses": [
-        {
-          "ability": "DEX",
-          "value": 2,
-          "type": "RACIAL"
-        },
-        {
-          "ability": "CHA",
-          "value": 2,
-          "type": "RACIAL"
-        },
-        {
-          "ability": "STR",
-          "value": -2,
-          "type": "RACIAL"
-        }
-      ],
-      "speeds": [
-        {
-          "type": "BASE",
-          "baseScore": 20
-        },
-        {
-          "type": "ARMOR",
-          "baseScore": 15
-        }
-      ]
-    },
-    {
-      "name": "Human",
-      "type": {
-        "type": "HUMANOID",
-        "subtypes": [
-          "HUMAN"
-        ]
-      },
-      "size": "MEDIUM",
-      "visions": [
-        "NORMAL"
-      ],
-      "baseLanguages": [
-        "COMMON"
-      ],
-      "optionalLanguages": [
-        "ABYSSAL",
-        "AKLO",
-        "AQUAN",
-        "AURAN",
-        "CELESTIAL",
-        "DRACONIC",
-        "DWARVEN",
-        "ELVEN",
-        "GIANT",
-        "GNOLL",
-        "GNOME",
-        "GOBLIN",
-        "HALFLING",
-        "IGNAN",
-        "INFERNAL",
-        "ORC",
-        "SYLVAN",
-        "TERRAN",
-        "UNDERCOMMON"
-      ],
-      "abilityBonuses": [
-        {
-          "ability": "ANY",
-          "value": 2,
-          "type": "RACIAL"
-        }
-      ],
-      "speeds": [
-        {
-          "type": "BASE",
-          "baseScore": 30
-        },
-        {
-          "type": "ARMOR",
-          "baseScore": 20
-        }
-      ]
-    }
-  ],
-  "skills": [
-    {
-      "name": "Acrobatics",
-      "keyAbility": "DEX",
-      "untrained": true,
-      "armorCheckPenalty": true
-    },
-    {
-      "name": "Appraise",
-      "keyAbility": "INT",
-      "untrained": true,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Bluff",
-      "keyAbility": "CHA",
-      "untrained": true,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Climb",
-      "keyAbility": "STR",
-      "untrained": true,
-      "armorCheckPenalty": true
-    },
-    {
-      "name": "Craft",
-      "keyAbility": "INT",
-      "untrained": true,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Diplomacy",
-      "keyAbility": "CHA",
-      "untrained": true,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Disable Device",
-      "keyAbility": "DEX",
-      "untrained": false,
-      "armorCheckPenalty": true
-    },
-    {
-      "name": "Disguise",
-      "keyAbility": "CHA",
-      "untrained": true,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Escape Artist",
-      "keyAbility": "DEX",
-      "untrained": true,
-      "armorCheckPenalty": true
-    },
-    {
-      "name": "Fly",
-      "keyAbility": "DEX",
-      "untrained": true,
-      "armorCheckPenalty": true
-    },
-    {
-      "name": "Handle Animal",
-      "keyAbility": "CHA",
-      "untrained": false,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Heal",
-      "keyAbility": "WIS",
-      "untrained": true,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Intimidate",
-      "keyAbility": "CHA",
-      "untrained": true,
-      "armorCheckPenalty": true
-    },
-    {
-      "name": "Knowledge (arcana)",
-      "keyAbility": "INT",
-      "untrained": false,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Knowledge (dungeonneering)",
-      "keyAbility": "INT",
-      "untrained": false,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Knowledge (engineering)",
-      "keyAbility": "INT",
-      "untrained": false,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Knowledge (geography)",
-      "keyAbility": "INT",
-      "untrained": false,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Knowledge (history)",
-      "keyAbility": "INT",
-      "untrained": false,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Knowledge (local)",
-      "keyAbility": "INT",
-      "untrained": false,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Knowledge (nature)",
-      "keyAbility": "INT",
-      "untrained": false,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Knowledge (nobility)",
-      "keyAbility": "INT",
-      "untrained": false,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Knowledge (planes)",
-      "keyAbility": "INT",
-      "untrained": false,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Knowledge (religion)",
-      "keyAbility": "INT",
-      "untrained": false,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Linguistics",
-      "keyAbility": "INT",
-      "untrained": false,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Perception",
-      "keyAbility": "WIS",
-      "untrained": true,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Perform",
-      "keyAbility": "CHA",
-      "untrained": true,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Profession",
-      "keyAbility": "WIS",
-      "untrained": false,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Ride",
-      "keyAbility": "DEX",
-      "untrained": true,
-      "armorCheckPenalty": true
-    },
-    {
-      "name": "Sense Motive",
-      "keyAbility": "WIS",
-      "untrained": true,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Sleight of Hand",
-      "keyAbility": "DEX",
-      "untrained": false,
-      "armorCheckPenalty": true
-    },
-    {
-      "name": "Spellcraft",
-      "keyAbility": "INT",
-      "untrained": false,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Stealth",
-      "keyAbility": "DEX",
-      "untrained": true,
-      "armorCheckPenalty": true
-    },
-    {
-      "name": "Survival",
-      "keyAbility": "WIS",
-      "untrained": true,
-      "armorCheckPenalty": false
-    },
-    {
-      "name": "Swim",
-      "keyAbility": "STR",
-      "untrained": true,
-      "armorCheckPenalty": true
-    },
-    {
-      "name": "Use Magic Device",
-      "keyAbility": "CHA",
-      "untrained": false,
-      "armorCheckPenalty": false
-    }
-  ]
+  "allowed": true
 }

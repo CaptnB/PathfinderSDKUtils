@@ -10,30 +10,24 @@ import com.google.gson.JsonParseException;
 import com.google.gson.JsonPrimitive;
 import com.google.gson.JsonSerializationContext;
 import com.google.gson.JsonSerializer;
-import com.pathfindersdk.bonus.Bonus;
+import com.pathfindersdk.books.BookContent;
 
-/**
- * This class allows read/write of Bonus objects into JSON, even when using polymorphism.
- * 
- */
-public class BonusAdapter implements JsonSerializer<Bonus>,
-    JsonDeserializer<Bonus>
+public class BookContentAdapter implements JsonDeserializer<BookContent>, JsonSerializer<BookContent>
 {
-
   @Override
-  public JsonElement serialize(Bonus bonus, Type type,
+  public JsonElement serialize(BookContent component, Type type,
       JsonSerializationContext context)
   {
     JsonObject retValue = new JsonObject();
-    String className = bonus.getClass().getCanonicalName();
+    String className = component.getClass().getCanonicalName();
     retValue.addProperty("CLASSNAME", className);
-    JsonElement elem = context.serialize(bonus); 
+    JsonElement elem = context.serialize(component); 
     retValue.add("INSTANCE", elem);
     return retValue;
   }
 
   @Override
-  public Bonus deserialize(JsonElement element, Type type,
+  public BookContent deserialize(JsonElement element, Type type,
       JsonDeserializationContext context) throws JsonParseException
   {
     JsonObject jsonObject =  element.getAsJsonObject();

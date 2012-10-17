@@ -7,8 +7,9 @@ import java.io.IOException;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.pathfindersdk.bonus.Bonus;
+import com.pathfindersdk.bonus.BonusStrategy;
 import com.pathfindersdk.books.Book;
+import com.pathfindersdk.books.BookContent;
 import com.pathfindersdk.prerequisites.Prerequisite;
 
 /**
@@ -23,7 +24,8 @@ public class BookJson
     GsonBuilder builder = new GsonBuilder();
     
     // Register adapters (for polymorphism)
-    builder.registerTypeAdapter(Bonus.class, new BonusAdapter());
+    builder.registerTypeAdapter(BookContent.class, new BookContentAdapter());
+    builder.registerTypeAdapter(BonusStrategy.class, new BonusStrategyAdapter());
     builder.registerTypeAdapter(Prerequisite.class, new PrerequisiteAdapter());
     
     // Set output as pretty print
@@ -42,9 +44,8 @@ public class BookJson
     {
       BufferedReader buffer = new BufferedReader(new FileReader(booksPath));
       book = gson.fromJson(buffer, Book.class);
-      book.updateIndexes();
       
-      System.out.println(book.getName() + " has been read from [" + booksPath + "]");
+      System.out.println(book.toString() + " has been read from [" + booksPath + "]");
     } 
     catch (IOException e)
     {
@@ -64,7 +65,7 @@ public class BookJson
       writer.write(gson.toJson(book));
       writer.close();
       
-      System.out.println(book.getName() + " has been written into [" + booksPath + "]");
+      System.out.println(book.toString() + " has been written into [" + booksPath + "]");
     } 
     catch (IOException e)
     {
