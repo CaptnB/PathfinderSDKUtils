@@ -10,29 +10,23 @@ import com.google.gson.JsonParseException;
 import com.google.gson.JsonPrimitive;
 import com.google.gson.JsonSerializationContext;
 import com.google.gson.JsonSerializer;
-import com.pathfindersdk.prerequisites.Prerequisite;
 
-/**
- * This class allows read/write of Prerequisite objects into JSON, even when using polymorphism.
- * 
- */
-public class PrerequisiteAdapter implements JsonDeserializer<Prerequisite>,
-    JsonSerializer<Prerequisite>
+public class JsonAdapter<C>  implements JsonDeserializer<C>, JsonSerializer<C>
 {
   @Override
-  public JsonElement serialize(Prerequisite prereq, Type type,
+  public JsonElement serialize(C component, Type type,
       JsonSerializationContext context)
   {
     JsonObject retValue = new JsonObject();
-    String className = prereq.getClass().getCanonicalName();
+    String className = component.getClass().getCanonicalName();
     retValue.addProperty("CLASSNAME", className);
-    JsonElement elem = context.serialize(prereq); 
+    JsonElement elem = context.serialize(component); 
     retValue.add("INSTANCE", elem);
     return retValue;
   }
 
   @Override
-  public Prerequisite deserialize(JsonElement element, Type type,
+  public C deserialize(JsonElement element, Type type,
       JsonDeserializationContext context) throws JsonParseException
   {
     JsonObject jsonObject =  element.getAsJsonObject();

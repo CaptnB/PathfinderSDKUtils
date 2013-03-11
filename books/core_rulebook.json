@@ -378,7 +378,7 @@
                   "strategy": {
                     "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
                     "INSTANCE": {
-                      "type": "FORTITUDE"
+                      "type": "FORT"
                     }
                   }
                 },
@@ -389,7 +389,7 @@
                   "strategy": {
                     "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
                     "INSTANCE": {
-                      "type": "REFLEX"
+                      "type": "REF"
                     }
                   }
                 },
@@ -528,7 +528,7 @@
                   "strategy": {
                     "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
                     "INSTANCE": {
-                      "type": "FORTITUDE"
+                      "type": "FORT"
                     }
                   }
                 },
@@ -539,7 +539,7 @@
                   "strategy": {
                     "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
                     "INSTANCE": {
-                      "type": "REFLEX"
+                      "type": "REF"
                     }
                   }
                 },
@@ -699,7 +699,7 @@
                   "strategy": {
                     "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
                     "INSTANCE": {
-                      "type": "FORTITUDE"
+                      "type": "FORT"
                     }
                   }
                 },
@@ -710,7 +710,7 @@
                   "strategy": {
                     "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
                     "INSTANCE": {
-                      "type": "REFLEX"
+                      "type": "REF"
                     }
                   }
                 },
@@ -978,7 +978,7 @@
                   "strategy": {
                     "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
                     "INSTANCE": {
-                      "type": "FORTITUDE"
+                      "type": "FORT"
                     }
                   }
                 },
@@ -989,7 +989,7 @@
                   "strategy": {
                     "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
                     "INSTANCE": {
-                      "type": "REFLEX"
+                      "type": "REF"
                     }
                   }
                 },
@@ -1015,7 +1015,7 @@
                   "strategy": {
                     "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
                     "INSTANCE": {
-                      "type": "FORTITUDE"
+                      "type": "FORT"
                     }
                   }
                 },
@@ -1025,7 +1025,7 @@
                   "strategy": {
                     "CLASSNAME": "com.pathfindersdk.bonus.SaveBonusStrategy",
                     "INSTANCE": {
-                      "type": "REFLEX"
+                      "type": "REF"
                     }
                   }
                 },
@@ -1561,6 +1561,1054 @@
             }
           ],
           "name": "Cleric",
+          "allowed": true
+        },
+        {
+          "hitDice": {
+            "numbers": 1,
+            "faces": 8
+          },
+          "skillRanks": 4,
+          "levels": [
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 2,
+              "reflex": 0,
+              "will": 2
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            }
+          ],
+          "name": "Druid",
+          "allowed": true
+        },
+        {
+          "hitDice": {
+            "numbers": 1,
+            "faces": 10
+          },
+          "skillRanks": 2,
+          "levels": [
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 2,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 0
+            }
+          ],
+          "name": "Fighter",
+          "allowed": true
+        },
+        {
+          "hitDice": {
+            "numbers": 1,
+            "faces": 8
+          },
+          "skillRanks": 4,
+          "levels": [
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 2,
+              "reflex": 2,
+              "will": 2
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            }
+          ],
+          "name": "Monk",
+          "allowed": true
+        },
+        {
+          "hitDice": {
+            "numbers": 1,
+            "faces": 10
+          },
+          "skillRanks": 2,
+          "levels": [
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 2,
+              "reflex": 0,
+              "will": 2
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            }
+          ],
+          "name": "Paladin",
+          "allowed": true
+        },
+        {
+          "hitDice": {
+            "numbers": 1,
+            "faces": 10
+          },
+          "skillRanks": 6,
+          "levels": [
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 2,
+              "reflex": 2,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 0
+            }
+          ],
+          "name": "Ranger",
+          "allowed": true
+        },
+        {
+          "hitDice": {
+            "numbers": 1,
+            "faces": 8
+          },
+          "skillRanks": 8,
+          "levels": [
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 2,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 1,
+              "will": 0
+            }
+          ],
+          "name": "Rogue",
+          "allowed": true
+        },
+        {
+          "hitDice": {
+            "numbers": 1,
+            "faces": 8
+          },
+          "skillRanks": 2,
+          "levels": [
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 2
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 1
+            }
+          ],
+          "name": "Sorcerer",
+          "allowed": true
+        },
+        {
+          "hitDice": {
+            "numbers": 1,
+            "faces": 6
+          },
+          "skillRanks": 2,
+          "levels": [
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 2
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 1,
+              "reflex": 1,
+              "will": 1
+            },
+            {
+              "baseAttackBonus": 0,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 0
+            },
+            {
+              "baseAttackBonus": 1,
+              "fortitude": 0,
+              "reflex": 0,
+              "will": 1
+            }
+          ],
+          "name": "Wizard",
           "allowed": true
         }
       ],
