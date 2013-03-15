@@ -1,9 +1,13 @@
 package com.pathfindersdkutils.main;
 
-import com.pathfindersdk.basics.CreatureType;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.pathfindersdk.bonus.Bonus;
 import com.pathfindersdk.bonus.InitiativeBonus;
 import com.pathfindersdk.bonus.SaveBonus;
 import com.pathfindersdk.bonus.SpeedBonus;
+import com.pathfindersdk.books.BookItem;
+import com.pathfindersdk.books.Library;
 import com.pathfindersdk.books.builders.AdvancedPlayersGuideBuilder;
 import com.pathfindersdk.books.builders.AdvancedRaceGuideBuilder;
 import com.pathfindersdk.books.builders.Bestiary2Builder;
@@ -12,16 +16,19 @@ import com.pathfindersdk.books.builders.BestiaryBuilder;
 import com.pathfindersdk.books.builders.CoreRulebookBuilder;
 import com.pathfindersdk.books.builders.UltimateCombatBuilder;
 import com.pathfindersdk.books.builders.UltimateMagicBuilder;
-import com.pathfindersdk.books.items.Race;
 import com.pathfindersdk.creatures.Character;
+import com.pathfindersdk.creatures.CreatureType;
+import com.pathfindersdk.creatures.Race;
+import com.pathfindersdk.enums.AlignmentType;
 import com.pathfindersdk.enums.BonusType;
 import com.pathfindersdk.enums.CreatureMainType;
 import com.pathfindersdk.enums.CreatureSubtype;
 import com.pathfindersdk.enums.SaveType;
 import com.pathfindersdk.enums.SizeType;
 import com.pathfindersdk.enums.SpeedType;
-import com.pathfindersdk.stats.Speed;
+import com.pathfindersdk.enums.VisionType;
 import com.pathfindersdkutils.json.BookJson;
+import com.pathfindersdkutils.json.JsonAdapter;
 
 
 public class UtilsApp
@@ -37,7 +44,8 @@ public class UtilsApp
     builder.setPrettyPrinting();
     Gson gson = builder.create();*/
 
-    testCharacter();
+    //testCharacter();
+    testLibrary();
   }
 
   private static void createBooks()
@@ -58,6 +66,7 @@ public class UtilsApp
     // Name
     Character character = new Character();
     character.setName("Gimli of the Deep");
+    character.setAlignment(AlignmentType.LAWFUL_GOOD);
     
     // Ability Scores
     character.getStrenght().setBaseScore(7);
@@ -80,29 +89,34 @@ public class UtilsApp
     race.addBonus(new SaveBonus(2, BonusType.RACIAL, SaveType.REF));
     race.addBonus(new SaveBonus(1, BonusType.MORALE, SaveType.REF));
     
-    race.addSpeed(new Speed(20, SpeedType.BASE));
-    race.addSpeed(new Speed(20, SpeedType.ARMOR));
-    race.addSpeed(new Speed(5,  SpeedType.BURROW));
+    race.addVision(VisionType.NORMAL);
+    race.addVision(VisionType.DARKVISION_60);
+    race.addVision(VisionType.LOW_LIGHT);
+    
+    /*race.addSpeed(SpeedType.BASE, new Stat(20));
+    race.addSpeed(SpeedType.ARMOR, new Stat(20));
+    race.addSpeed(SpeedType.BURROW, new Speed(5));*/
     character.setRace(race);
     character.getSpeed(SpeedType.ARMOR).addBonus(new SpeedBonus(-5, BonusType.RACIAL, SpeedType.ARMOR, "for being dumb"));
     character.getSpeed(SpeedType.BURROW).addBonus(new SpeedBonus(2, BonusType.ENHANCEMENT, SpeedType.BURROW));
     
-    System.out.println("Name : " + character.getName());
-    System.out.println("Race : " + character.getRace().toString());
-    System.out.println("Type : " + character.getType().toString());
-    System.out.println("Size : " + character.getSize().toString());
-    System.out.println("Strenght : " + character.getStrenght().toString());
-    System.out.println("Dexterity : " + character.getDexterity().toString());
-    System.out.println("Constitution : " + character.getConstitution().toString());
-    System.out.println("Intelligence : " + character.getIntelligence().toString());
-    System.out.println("Wisdom : " + character.getWisdom().toString());
-    System.out.println("Charisma : " + character.getCharisma().toString());
-    System.out.println("Fortitude : " + character.getFortitude().toString());
-    System.out.println("Reflex : " + character.getReflex().toString());
-    System.out.println("Will : " + character.getWill().toString());
-    System.out.println("Initiative : " + character.getInitiative().toString());
-    System.out.println("Base speed : " + character.getSpeed(SpeedType.BASE).toString());
-    System.out.println("Armor speed : " + character.getSpeed(SpeedType.ARMOR).toString());
-    System.out.println("Burrow speed : " + character.getSpeed(SpeedType.BURROW).toString());
+    System.out.println(character.toString());
+  }
+  
+  private static void testLibrary()
+  {
+    GsonBuilder builder = new GsonBuilder();
+    
+    // Register adapters (for polymorphism)
+    builder.registerTypeAdapter(BookItem.class, new JsonAdapter<BookItem>());
+    builder.registerTypeAdapter(Bonus.class, new JsonAdapter<Bonus>());
+
+    builder.setPrettyPrinting();
+    Gson gson = builder.create();
+    
+    new CoreRulebookBuilder().createBook("Core Rulebook");
+    
+    String lib = gson.toJson(Library.getInstance());
+    System.out.println(lib);
   }
 }
