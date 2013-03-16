@@ -7,15 +7,8 @@ import com.pathfindersdk.bonus.InitiativeBonus;
 import com.pathfindersdk.bonus.SaveBonus;
 import com.pathfindersdk.bonus.SpeedBonus;
 import com.pathfindersdk.books.BookItem;
-import com.pathfindersdk.books.Library;
-import com.pathfindersdk.books.builders.AdvancedPlayersGuideBuilder;
-import com.pathfindersdk.books.builders.AdvancedRaceGuideBuilder;
-import com.pathfindersdk.books.builders.Bestiary2Builder;
-import com.pathfindersdk.books.builders.Bestiary3Builder;
-import com.pathfindersdk.books.builders.BestiaryBuilder;
-import com.pathfindersdk.books.builders.CoreRulebookBuilder;
-import com.pathfindersdk.books.builders.UltimateCombatBuilder;
-import com.pathfindersdk.books.builders.UltimateMagicBuilder;
+import com.pathfindersdk.books.Index;
+import com.pathfindersdk.books.items.RaceItem;
 import com.pathfindersdk.creatures.Character;
 import com.pathfindersdk.creatures.CreatureType;
 import com.pathfindersdk.creatures.Race;
@@ -23,10 +16,19 @@ import com.pathfindersdk.enums.AlignmentType;
 import com.pathfindersdk.enums.BonusType;
 import com.pathfindersdk.enums.CreatureMainType;
 import com.pathfindersdk.enums.CreatureSubtype;
+import com.pathfindersdk.enums.LanguageType;
 import com.pathfindersdk.enums.SaveType;
 import com.pathfindersdk.enums.SizeType;
 import com.pathfindersdk.enums.SpeedType;
 import com.pathfindersdk.enums.VisionType;
+import com.pathfindersdkutils.books.AdvancedPlayersGuideBuilder;
+import com.pathfindersdkutils.books.AdvancedRaceGuideBuilder;
+import com.pathfindersdkutils.books.Bestiary2Builder;
+import com.pathfindersdkutils.books.Bestiary3Builder;
+import com.pathfindersdkutils.books.BestiaryBuilder;
+import com.pathfindersdkutils.books.CoreRulebookBuilder;
+import com.pathfindersdkutils.books.UltimateCombatBuilder;
+import com.pathfindersdkutils.books.UltimateMagicBuilder;
 import com.pathfindersdkutils.json.BookJson;
 import com.pathfindersdkutils.json.JsonAdapter;
 
@@ -45,7 +47,10 @@ public class UtilsApp
     Gson gson = builder.create();*/
 
     //testCharacter();
-    testLibrary();
+    //testLibrary();
+    RaceItem test = new RaceItem("Test");
+    test.getBaseLanguages().add(LanguageType.ABYSSAL);
+    System.out.println(test.getBaseLanguages());
   }
 
   private static void createBooks()
@@ -116,7 +121,7 @@ public class UtilsApp
     
     new CoreRulebookBuilder().createBook("Core Rulebook");
     
-    String lib = gson.toJson(Library.getInstance());
+    String lib = gson.toJson(Index.getInstance());
     System.out.println(lib);
   }
 }
