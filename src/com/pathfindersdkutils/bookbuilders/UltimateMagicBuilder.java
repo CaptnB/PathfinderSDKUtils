@@ -1,12 +1,12 @@
-package com.pathfindersdkutils.books;
+package com.pathfindersdkutils.bookbuilders;
 
 import com.pathfindersdk.books.Book;
 import com.pathfindersdk.books.BookBuilder;
 
 /**
- * This class builds the Advanced Race Guide content and returns the book.
+ * This class builds the Ultimate Magic content and returns the book.
  */
-public class AdvancedRaceGuideBuilder extends BookBuilder
+public class UltimateMagicBuilder extends BookBuilder
 {
 
   @Override

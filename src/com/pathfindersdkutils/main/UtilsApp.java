@@ -2,7 +2,7 @@ package com.pathfindersdkutils.main;
 
 import com.pathfindersdk.creatures.Character;
 import com.pathfindersdk.creatures.Description;
-import com.pathfindersdkutils.books.CoreRulebookBuilder;
+import com.pathfindersdkutils.bookbuilders.CoreRulebookBuilder;
 
 
 public class UtilsApp

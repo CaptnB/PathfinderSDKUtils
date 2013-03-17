@@ -1,12 +1,12 @@
-package com.pathfindersdkutils.books;
+package com.pathfindersdkutils.bookbuilders;
 
 import com.pathfindersdk.books.Book;
 import com.pathfindersdk.books.BookBuilder;
 
 /**
- * This class builds the Ultimate Magic content and returns the book.
+ * This class builds the Bestiary 3 content and returns the book.
  */
-public class UltimateMagicBuilder extends BookBuilder
+public class Bestiary3Builder extends BookBuilder
 {
 
   @Override

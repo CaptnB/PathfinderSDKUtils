@@ -1,4 +1,4 @@
-package com.pathfindersdkutils.books;
+package com.pathfindersdkutils.bookbuilders;
 
 import com.pathfindersdk.bonus.SaveBonus;
 import com.pathfindersdk.books.Book;
