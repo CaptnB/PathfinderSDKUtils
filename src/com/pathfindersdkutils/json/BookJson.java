@@ -7,9 +7,12 @@ import java.io.IOException;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.pathfindersdk.bonus.Bonus;
 import com.pathfindersdk.books.Book;
 import com.pathfindersdk.books.BookItem;
+import com.pathfindersdk.creatures.Creature;
 import com.pathfindersdk.prerequisites.Prerequisite;
+import com.pathfindersdk.stats.Stat;
 
 /**
  * This class reads/writes Book objetcs from/to a JSON file.
@@ -23,8 +26,11 @@ public class BookJson
     GsonBuilder builder = new GsonBuilder();
     
     // Register adapters (for polymorphism)
+    builder.registerTypeAdapter(Bonus.class, new JsonAdapter<Bonus>());
     builder.registerTypeAdapter(BookItem.class, new JsonAdapter<BookItem>());
+    builder.registerTypeAdapter(Creature.class, new JsonAdapter<Creature>());
     builder.registerTypeAdapter(Prerequisite.class, new JsonAdapter<Prerequisite>());
+    builder.registerTypeAdapter(Stat.class, new JsonAdapter<Stat>());
     
     // Set output as pretty print
     builder.setPrettyPrinting();
