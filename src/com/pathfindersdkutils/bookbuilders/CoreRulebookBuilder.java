@@ -7,9 +7,7 @@ import com.pathfindersdk.books.BookSection;
 import com.pathfindersdk.books.items.ClassItem;
 import com.pathfindersdk.books.items.RaceItem;
 import com.pathfindersdk.books.items.SkillItem;
-import com.pathfindersdk.creatures.ClassLevel;
 import com.pathfindersdk.creatures.CreatureType;
-import com.pathfindersdk.creatures.RacialTrait;
 import com.pathfindersdk.enums.AbilityType;
 import com.pathfindersdk.enums.BonusType;
 import com.pathfindersdk.enums.BookSectionType;
@@ -20,6 +18,9 @@ import com.pathfindersdk.enums.SaveType;
 import com.pathfindersdk.enums.SizeType;
 import com.pathfindersdk.enums.SpeedType;
 import com.pathfindersdk.enums.VisionType;
+import com.pathfindersdk.features.ClassLevel;
+import com.pathfindersdk.features.RacialTrait;
+import com.pathfindersdk.features.WeaponFamiliarity;
 import com.pathfindersdk.stats.Dice;
 import com.pathfindersdk.stats.Stat;
 /**
@@ -36,6 +37,7 @@ public class CoreRulebookBuilder extends BookBuilder
     RaceItem race;
     CreatureType type;
     RacialTrait trait;
+    WeaponFamiliarity weapFam;
     
     race = new RaceItem("Dwarf");
     type = new CreatureType(CreatureMainType.HUMANOID);
@@ -75,7 +77,9 @@ public class CoreRulebookBuilder extends BookBuilder
     trait = new RacialTrait("Stone Cunning");
     //trait.addBonus(new SkillBonus(2, BonusType.RACIAL, "Perception", "to notice unusual stonework"));
     race.addRacialTrait(trait);
-    // Weapon Familiarity
+    weapFam = new WeaponFamiliarity();
+    // Add weapon proficiencies
+    race.setWeaponFamiliarity(weapFam);
     races.addItem(race);
     
     race = new RaceItem("Elf");
@@ -98,6 +102,9 @@ public class CoreRulebookBuilder extends BookBuilder
     race.addOptionalLanguage(LanguageType.GOBLIN);
     race.addOptionalLanguage(LanguageType.ORC);
     race.addOptionalLanguage(LanguageType.SYLVAN);
+    weapFam = new WeaponFamiliarity();
+    // Add weapon proficiencies
+    race.setWeaponFamiliarity(weapFam);
     races.addItem(race);
     
     race = new RaceItem("Gnome");
@@ -120,6 +127,9 @@ public class CoreRulebookBuilder extends BookBuilder
     race.addOptionalLanguage(LanguageType.GIANT);
     race.addOptionalLanguage(LanguageType.GOBLIN);
     race.addOptionalLanguage(LanguageType.ORC);
+    weapFam = new WeaponFamiliarity();
+    // Add weapon proficiencies
+    race.setWeaponFamiliarity(weapFam);
     races.addItem(race);
     
     race = new RaceItem("Half-Elf");
@@ -171,6 +181,9 @@ public class CoreRulebookBuilder extends BookBuilder
     race.addOptionalLanguage(LanguageType.GIANT);
     race.addOptionalLanguage(LanguageType.GNOLL);
     race.addOptionalLanguage(LanguageType.GOBLIN);
+    weapFam = new WeaponFamiliarity();
+    // Add weapon proficiencies
+    race.setWeaponFamiliarity(weapFam);
     races.addItem(race);
     
     race = new RaceItem("Halfling");
@@ -190,6 +203,9 @@ public class CoreRulebookBuilder extends BookBuilder
     race.addOptionalLanguage(LanguageType.ELVEN);
     race.addOptionalLanguage(LanguageType.GNOME);
     race.addOptionalLanguage(LanguageType.GOBLIN);
+    weapFam = new WeaponFamiliarity();
+    // Add weapon proficiencies
+    race.setWeaponFamiliarity(weapFam);
     races.addItem(race);
     
     race = new RaceItem("Human");
