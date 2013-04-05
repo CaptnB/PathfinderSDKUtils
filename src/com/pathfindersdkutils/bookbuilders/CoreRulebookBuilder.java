@@ -1,12 +1,16 @@
 package com.pathfindersdkutils.bookbuilders;
 
+import com.pathfindersdk.bonus.AcBonus;
+import com.pathfindersdk.bonus.AttackBonus;
 import com.pathfindersdk.bonus.SaveBonus;
+import com.pathfindersdk.bonus.SkillBonus;
 import com.pathfindersdk.books.Book;
 import com.pathfindersdk.books.BookBuilder;
 import com.pathfindersdk.books.BookSection;
 import com.pathfindersdk.books.items.ClassItem;
 import com.pathfindersdk.books.items.RaceItem;
 import com.pathfindersdk.books.items.SkillItem;
+import com.pathfindersdk.creatures.Character;
 import com.pathfindersdk.creatures.CreatureType;
 import com.pathfindersdk.enums.AbilityType;
 import com.pathfindersdk.enums.BonusType;
@@ -18,11 +22,13 @@ import com.pathfindersdk.enums.SaveType;
 import com.pathfindersdk.enums.SizeType;
 import com.pathfindersdk.enums.SpeedType;
 import com.pathfindersdk.enums.VisionType;
+import com.pathfindersdk.features.AbilityIncrease;
 import com.pathfindersdk.features.ClassLevel;
-import com.pathfindersdk.features.RacialTrait;
+import com.pathfindersdk.features.Feature;
 import com.pathfindersdk.features.WeaponFamiliarity;
 import com.pathfindersdk.stats.Dice;
 import com.pathfindersdk.stats.Stat;
+
 /**
 * This class builds the Core Rulebook content and returns the book.
 */
@@ -36,16 +42,16 @@ public class CoreRulebookBuilder extends BookBuilder
     
     RaceItem race;
     CreatureType type;
-    RacialTrait trait;
+    Feature<Character> racialTrait;
     WeaponFamiliarity weapFam;
     
     race = new RaceItem("Dwarf");
     type = new CreatureType(CreatureMainType.HUMANOID);
     type.addSubtype(CreatureSubtype.DWARF);
     race.setType(type);
-    race.addRacialModifier(2, AbilityType.CON);
-    race.addRacialModifier(2, AbilityType.WIS);
-    race.addRacialModifier(-2, AbilityType.CHA);
+    race.addRacialModifier(new AbilityIncrease(2, AbilityType.CON));
+    race.addRacialModifier(new AbilityIncrease(2, AbilityType.WIS));
+    race.addRacialModifier(new AbilityIncrease(-2, AbilityType.CHA));
     race.setSize(SizeType.MEDIUM);
     race.setVision(VisionType.DARKVISION_60);
     race.addSpeed(SpeedType.BASE, new Stat(20));
@@ -58,25 +64,25 @@ public class CoreRulebookBuilder extends BookBuilder
     race.addOptionalLanguage(LanguageType.ORC);
     race.addOptionalLanguage(LanguageType.TERRAN);
     race.addOptionalLanguage(LanguageType.UNDERCOMMON);
-    trait = new RacialTrait("Defensive Training");
-    //trait.addBonus(new AcBonus(4, BonusType.DODGE, "against monsters of the giant subtype"));
-    race.addRacialTrait(trait);
-    trait = new RacialTrait("Greed");
-    //trait.addBonus(new SkillBonus(2, BonusType.RACIAL, "Appraise", "to determine the price of nonmagical precious metal or gemstones"));
-    race.addRacialTrait(trait);
-    trait = new RacialTrait("Hatred");
-    //trait.addBonus(new AttackBonus(1, BonusType.RACIAL, "against creatures of the orc subtype"));
-    //trait.addBonus(new AttackBonus(1, BonusType.RACIAL, "against creatures of the goblinoid subtype"));
-    race.addRacialTrait(trait);
-    trait = new RacialTrait("Hardy");
-    trait.addBonus(new SaveBonus(2, BonusType.RACIAL, SaveType.ALL, "against poison, spells and spell-like abilities"));
-    race.addRacialTrait(trait);
-    trait = new RacialTrait("Stability");
-    //trait.addBonus(new CmdBonus(4, BonusType.RACIAL, "to resist a bull rush or trip attempt"));
-    race.addRacialTrait(trait);
-    trait = new RacialTrait("Stone Cunning");
-    //trait.addBonus(new SkillBonus(2, BonusType.RACIAL, "Perception", "to notice unusual stonework"));
-    race.addRacialTrait(trait);
+    racialTrait = new Feature<Character>("Defensive Training");
+    racialTrait.addBonus(new AcBonus(4, BonusType.DODGE, "against monsters of the giant subtype"));
+    race.addRacialTrait(racialTrait);
+    racialTrait = new Feature<Character>("Greed");
+    racialTrait.addBonus(new SkillBonus(2, BonusType.RACIAL, "Appraise", "to determine the price of nonmagical precious metal or gemstones"));
+    race.addRacialTrait(racialTrait);
+    racialTrait = new Feature<Character>("Hatred");
+    racialTrait.addBonus(new AttackBonus(1, BonusType.RACIAL, "against creatures of the orc subtype"));
+    racialTrait.addBonus(new AttackBonus(1, BonusType.RACIAL, "against creatures of the goblinoid subtype"));
+    race.addRacialTrait(racialTrait);
+    racialTrait = new Feature<Character>("Hardy");
+    racialTrait.addBonus(new SaveBonus(2, BonusType.RACIAL, SaveType.ALL, "against poison, spells and spell-like abilities"));
+    race.addRacialTrait(racialTrait);
+    racialTrait = new Feature<Character>("Stability");
+    //racialTrait.addBonus(new CmdBonus(4, BonusType.RACIAL, "to resist a bull rush or trip attempt"));
+    race.addRacialTrait(racialTrait);
+    racialTrait = new Feature<Character>("Stone Cunning");
+    racialTrait.addBonus(new SkillBonus(2, BonusType.RACIAL, "Perception", "to notice unusual stonework"));
+    race.addRacialTrait(racialTrait);
     weapFam = new WeaponFamiliarity();
     // Add weapon proficiencies
     race.setWeaponFamiliarity(weapFam);
@@ -86,9 +92,9 @@ public class CoreRulebookBuilder extends BookBuilder
     type = new CreatureType(CreatureMainType.HUMANOID);
     type.addSubtype(CreatureSubtype.ELF);
     race.setType(type);
-    race.addRacialModifier(2, AbilityType.DEX);
-    race.addRacialModifier(2, AbilityType.INT);
-    race.addRacialModifier(-2, AbilityType.CON);
+    race.addRacialModifier(new AbilityIncrease(2, AbilityType.DEX));
+    race.addRacialModifier(new AbilityIncrease(2, AbilityType.INT));
+    race.addRacialModifier(new AbilityIncrease(-2, AbilityType.CON));
     race.setSize(SizeType.MEDIUM);
     race.setVision(VisionType.LOW_LIGHT);
     race.addSpeed(SpeedType.BASE, new Stat(30));
@@ -111,9 +117,9 @@ public class CoreRulebookBuilder extends BookBuilder
     type = new CreatureType(CreatureMainType.HUMANOID);
     type.addSubtype(CreatureSubtype.GNOME);
     race.setType(type);
-    race.addRacialModifier(2, AbilityType.CON);
-    race.addRacialModifier(2, AbilityType.CHA);
-    race.addRacialModifier(-2, AbilityType.STR);
+    race.addRacialModifier(new AbilityIncrease(2, AbilityType.CON));
+    race.addRacialModifier(new AbilityIncrease(2, AbilityType.CHA));
+    race.addRacialModifier(new AbilityIncrease(-2, AbilityType.STR));
     race.setSize(SizeType.SMALL);
     race.setVision(VisionType.LOW_LIGHT);
     race.addSpeed(SpeedType.BASE, new Stat(20));
@@ -137,7 +143,7 @@ public class CoreRulebookBuilder extends BookBuilder
     type.addSubtype(CreatureSubtype.ELF);
     type.addSubtype(CreatureSubtype.HUMAN);
     race.setType(type);
-    race.addRacialModifier(2, AbilityType.ANY);
+    race.addRacialModifier(new AbilityIncrease(2, AbilityType.ANY));
     race.setSize(SizeType.MEDIUM);
     race.setVision(VisionType.LOW_LIGHT);
     race.addSpeed(SpeedType.BASE, new Stat(30));
@@ -169,7 +175,7 @@ public class CoreRulebookBuilder extends BookBuilder
     type.addSubtype(CreatureSubtype.HUMAN);
     type.addSubtype(CreatureSubtype.ORC);
     race.setType(type);
-    race.addRacialModifier(2, AbilityType.ANY);
+    race.addRacialModifier(new AbilityIncrease(2, AbilityType.ANY));
     race.setSize(SizeType.MEDIUM);
     race.setVision(VisionType.DARKVISION_60);
     race.addSpeed(SpeedType.BASE, new Stat(30));
@@ -190,9 +196,9 @@ public class CoreRulebookBuilder extends BookBuilder
     type = new CreatureType(CreatureMainType.HUMANOID);
     type.addSubtype(CreatureSubtype.HALFLING);
     race.setType(type);
-    race.addRacialModifier(2, AbilityType.DEX);
-    race.addRacialModifier(2, AbilityType.CHA);
-    race.addRacialModifier(-2, AbilityType.STR);
+    race.addRacialModifier(new AbilityIncrease(2, AbilityType.DEX));
+    race.addRacialModifier(new AbilityIncrease(2, AbilityType.CHA));
+    race.addRacialModifier(new AbilityIncrease(-2, AbilityType.STR));
     race.setSize(SizeType.SMALL);
     race.setVision(VisionType.NORMAL);
     race.addSpeed(SpeedType.BASE, new Stat(20));
@@ -212,7 +218,7 @@ public class CoreRulebookBuilder extends BookBuilder
     type = new CreatureType(CreatureMainType.HUMANOID);
     type.addSubtype(CreatureSubtype.HUMAN);
     race.setType(type);
-    race.addRacialModifier(2, AbilityType.ANY);
+    race.addRacialModifier(new AbilityIncrease(2, AbilityType.ANY));
     race.setSize(SizeType.MEDIUM);
     race.setVision(VisionType.NORMAL);
     race.addSpeed(SpeedType.BASE, new Stat(30));
@@ -239,7 +245,7 @@ public class CoreRulebookBuilder extends BookBuilder
     race.addOptionalLanguage(LanguageType.UNDERCOMMON);
     races.addItem(race);
 
-    book.addItem(races);
+    book.addSection(races);
   }
 
   @Override
@@ -729,7 +735,7 @@ public class CoreRulebookBuilder extends BookBuilder
     classItem.addClassLevel(level);
     classes.addItem(classItem);
 
-    book.addItem(classes);
+    book.addSection(classes);
   }
 
   @Override
@@ -822,7 +828,7 @@ public class CoreRulebookBuilder extends BookBuilder
     skills.addItem(new SkillItem("Swim", AbilityType.STR, true, true));
     skills.addItem(new SkillItem("Use Magic Device", AbilityType.CHA, false, false));
 
-    book.addItem(skills);
+    book.addSection(skills);
   }
 
 }
