@@ -1,7 +1,10 @@
 package com.pathfindersdkutils.bookbuilders;
 
-import com.pathfindersdk.books.Book;
+import java.util.SortedMap;
+
 import com.pathfindersdk.books.BookBuilder;
+import com.pathfindersdk.books.BookSection;
+import com.pathfindersdk.enums.BookSectionType;
 
 /**
  * This class builds the Bestiary content and returns the book.
@@ -10,77 +13,84 @@ public class BestiaryBuilder extends BookBuilder
 {
 
   @Override
-  protected void addRaces(Book book)
-  {
-    // TODO Auto-generated method stub
-
-  }
-
-  @Override
-  protected void addAlternateRacialTraits(Book book)
+  protected void registerBonusTypes()
   {
     // TODO Auto-generated method stub
     
   }
 
   @Override
-  protected void addClasses(Book book)
+  protected void addRaces(SortedMap<BookSectionType, BookSection> sections)
   {
     // TODO Auto-generated method stub
 
   }
 
   @Override
-  protected void addClassExtensions(Book book)
+  protected void addAlternateRacialTraits(SortedMap<BookSectionType, BookSection> sections)
   {
     // TODO Auto-generated method stub
     
   }
 
   @Override
-  protected void addArchetypes(Book book)
+  protected void addClasses(SortedMap<BookSectionType, BookSection> sections)
   {
     // TODO Auto-generated method stub
 
   }
 
   @Override
-  protected void addPrestigeClasses(Book book)
+  protected void addClassExtensions(SortedMap<BookSectionType, BookSection> sections)
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  protected void addArchetypes(SortedMap<BookSectionType, BookSection> sections)
   {
     // TODO Auto-generated method stub
 
   }
 
   @Override
-  protected void addSkills(Book book)
+  protected void addPrestigeClasses(SortedMap<BookSectionType, BookSection> sections)
   {
     // TODO Auto-generated method stub
 
   }
 
   @Override
-  protected void addFeats(Book book)
+  protected void addSkills(SortedMap<BookSectionType, BookSection> sections)
   {
     // TODO Auto-generated method stub
 
   }
 
   @Override
-  protected void addEquipment(Book book)
+  protected void addFeats(SortedMap<BookSectionType, BookSection> sections)
   {
     // TODO Auto-generated method stub
 
   }
 
   @Override
-  protected void addSpells(Book book)
+  protected void addEquipment(SortedMap<BookSectionType, BookSection> sections)
   {
     // TODO Auto-generated method stub
 
   }
 
   @Override
-  protected void addMonsters(Book book)
+  protected void addSpells(SortedMap<BookSectionType, BookSection> sections)
+  {
+    // TODO Auto-generated method stub
+
+  }
+
+  @Override
+  protected void addMonsters(SortedMap<BookSectionType, BookSection> sections)
   {
     // TODO Auto-generated method stub
 

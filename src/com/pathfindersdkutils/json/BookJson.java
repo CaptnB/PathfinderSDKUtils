@@ -11,7 +11,6 @@ import com.pathfindersdk.bonus.Bonus;
 import com.pathfindersdk.books.Book;
 import com.pathfindersdk.books.BookItem;
 import com.pathfindersdk.creatures.Creature;
-import com.pathfindersdk.prerequisites.Prerequisite;
 import com.pathfindersdk.stats.Stat;
 
 /**
@@ -29,7 +28,7 @@ public class BookJson
     builder.registerTypeAdapter(Bonus.class, new JsonAdapter<Bonus>());
     builder.registerTypeAdapter(BookItem.class, new JsonAdapter<BookItem>());
     builder.registerTypeAdapter(Creature.class, new JsonAdapter<Creature>());
-    builder.registerTypeAdapter(Prerequisite.class, new JsonAdapter<Prerequisite>());
+    //builder.registerTypeAdapter(Prerequisite.class, new JsonAdapter<Prerequisite>());
     builder.registerTypeAdapter(Stat.class, new JsonAdapter<Stat>());
     
     // Set output as pretty print
