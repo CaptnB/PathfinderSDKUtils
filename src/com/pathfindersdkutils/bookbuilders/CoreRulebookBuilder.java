@@ -9,7 +9,6 @@ import java.util.TreeSet;
 
 import com.pathfindersdk.bonus.AcBonus;
 import com.pathfindersdk.bonus.AttackBonus;
-import com.pathfindersdk.bonus.Bonus;
 import com.pathfindersdk.bonus.CmdBonus;
 import com.pathfindersdk.bonus.SaveBonus;
 import com.pathfindersdk.bonus.SkillBonus;
@@ -45,6 +44,7 @@ public class CoreRulebookBuilder extends BookBuilder
   }
 
   @Override
+  @SuppressWarnings({"unchecked"})
   protected void addRaces(SortedMap<BookSectionType, BookSection> sections)
   {
     BookSection section = new BookSection(BookSectionType.RACES);
@@ -55,7 +55,6 @@ public class CoreRulebookBuilder extends BookBuilder
     SortedMap<SpeedType, Integer> speeds;
     VisionType vision;
     SortedSet<RacialTrait> racialTraits;
-    SortedSet<Bonus> bonuses;
     // TODO: Weapon proficiencies/familiarities
     SortedSet<LanguageType> baseLanguages;
     SortedSet<LanguageType> optionalLanguages;
@@ -78,30 +77,13 @@ public class CoreRulebookBuilder extends BookBuilder
     vision = VisionType.DARKVISION_60;
     
     racialTraits = new TreeSet<RacialTrait>();
-    bonuses = new TreeSet<Bonus>();
-    bonuses.add(new AcBonus(4, BonusTypeRegister.getInstance().get("Dodge"), "against monsters of the giant subtype"));
-    racialTraits.add(new RacialTrait("Defensive Training", bonuses));
-    
-    bonuses = new TreeSet<Bonus>();
-    bonuses.add(new SkillBonus(2, BonusTypeRegister.getInstance().get("Racial"), "Appraise", "to determine the price of nonmagical precious metal or gemstones"));
-    racialTraits.add(new RacialTrait("Greed", bonuses));
-    
-    bonuses = new TreeSet<Bonus>();
-    bonuses.add(new AttackBonus(1, BonusTypeRegister.getInstance().get("Racial"), "against creatures of the orc subtype"));
-    bonuses.add(new AttackBonus(1, BonusTypeRegister.getInstance().get("Racial"), "against creatures of the goblinoid subtype"));
-    racialTraits.add(new RacialTrait("Hatred", bonuses));
-    
-    bonuses = new TreeSet<Bonus>();
-    bonuses.add(new SaveBonus(2, BonusTypeRegister.getInstance().get("Racial"), SaveType.ALL, "against poison, spells and spell-like abilities"));
-    racialTraits.add(new RacialTrait("Hardy", bonuses));
-    
-    bonuses = new TreeSet<Bonus>();
-    bonuses.add(new CmdBonus(4, BonusTypeRegister.getInstance().get("Racial"), "to resist a bull rush or trip attempt"));
-    racialTraits.add(new RacialTrait("Stability", bonuses));
-    
-    bonuses = new TreeSet<Bonus>();
-    bonuses.add(new SkillBonus(2, BonusTypeRegister.getInstance().get("Racial"), "Perception", "to notice unusual stonework"));
-    racialTraits.add(new RacialTrait("Stone Cunning", bonuses));
+    racialTraits.add(new RacialTrait("Defensive Training", new AcBonus(4, BonusTypeRegister.getInstance().get("Dodge"), "against monsters of the giant subtype")));
+    racialTraits.add(new RacialTrait("Greed", new SkillBonus(2, BonusTypeRegister.getInstance().get("Racial"), "Appraise", "to determine the price of nonmagical precious metal or gemstones")));
+    racialTraits.add(new RacialTrait("Hatred", new AttackBonus(1, BonusTypeRegister.getInstance().get("Racial"), "against creatures of the orc subtype"),
+                                               new AttackBonus(1, BonusTypeRegister.getInstance().get("Racial"), "against creatures of the goblinoid subtype")));
+    racialTraits.add(new RacialTrait("Hardy", new SaveBonus(2, BonusTypeRegister.getInstance().get("Racial"), SaveType.ALL, "against poison, spells and spell-like abilities")));
+    racialTraits.add(new RacialTrait("Stability", new CmdBonus(4, BonusTypeRegister.getInstance().get("Racial"), "to resist a bull rush or trip attempt")));
+    racialTraits.add(new RacialTrait("Stone Cunning", new SkillBonus(2, BonusTypeRegister.getInstance().get("Untyped"), "Perception", "to notice unusual stonework")));
 
     // Weapon Familiarity
 
