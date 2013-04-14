@@ -13,6 +13,7 @@ import com.pathfindersdk.bonus.CmdBonus;
 import com.pathfindersdk.bonus.SaveBonus;
 import com.pathfindersdk.bonus.SkillBonus;
 import com.pathfindersdk.books.BookBuilder;
+import com.pathfindersdk.books.BookComponent;
 import com.pathfindersdk.books.BookSection;
 import com.pathfindersdk.books.items.RaceItem;
 import com.pathfindersdk.books.items.SkillItem;
@@ -37,19 +38,10 @@ public class CoreRulebookBuilder extends BookBuilder
 {
 
   @Override
-  protected void registerBonusTypes()
-  {
-    // TODO Auto-generated method stub
-    
-  }
-
-  @Override
   @SuppressWarnings({"unchecked"})
-  protected void addRaces(SortedMap<BookSectionType, BookSection> sections)
+  protected BookSection createRacesSection(BookSectionType type, SortedSet<BookComponent> components)
   {
-    BookSection section = new BookSection(BookSectionType.RACES);
-
-    CreatureType type;
+    CreatureType creatureType;
     List<AbilityIncrease> racialModifiers;
     SizeType size;
     SortedMap<SpeedType, Integer> speeds;
@@ -60,8 +52,8 @@ public class CoreRulebookBuilder extends BookBuilder
     SortedSet<LanguageType> optionalLanguages;
 
     // Dwarf
-    type = new CreatureType(CreatureMainType.HUMANOID);
-    type.addSubtype(CreatureSubtype.DWARF);
+    creatureType = new CreatureType(CreatureMainType.HUMANOID);
+    creatureType.addSubtype(CreatureSubtype.DWARF);
     
     racialModifiers = new ArrayList<AbilityIncrease>();
     racialModifiers.add(new AbilityIncrease(2, AbilityType.CON));
@@ -99,11 +91,11 @@ public class CoreRulebookBuilder extends BookBuilder
     optionalLanguages.add(LanguageType.TERRAN);
     optionalLanguages.add(LanguageType.UNDERCOMMON);
 
-    section.addItem(new RaceItem("Dwarf", type, racialModifiers, size, speeds, vision, racialTraits, baseLanguages, optionalLanguages));
+    components.add(new RaceItem("Dwarf", creatureType, racialModifiers, size, speeds, vision, racialTraits, baseLanguages, optionalLanguages));
     
     // Elf
-    type = new CreatureType(CreatureMainType.HUMANOID);
-    type.addSubtype(CreatureSubtype.ELF);
+    creatureType = new CreatureType(CreatureMainType.HUMANOID);
+    creatureType.addSubtype(CreatureSubtype.ELF);
 
     racialModifiers = new ArrayList<AbilityIncrease>();
     racialModifiers.add(new AbilityIncrease(2, AbilityType.DEX));
@@ -135,11 +127,11 @@ public class CoreRulebookBuilder extends BookBuilder
     optionalLanguages.add(LanguageType.ORC);
     optionalLanguages.add(LanguageType.SYLVAN);
 
-    section.addItem(new RaceItem("Elf", type, racialModifiers, size, speeds, vision, racialTraits, baseLanguages, optionalLanguages));
+    components.add(new RaceItem("Elf", creatureType, racialModifiers, size, speeds, vision, racialTraits, baseLanguages, optionalLanguages));
    
     // Gnome
-    type = new CreatureType(CreatureMainType.HUMANOID);
-    type.addSubtype(CreatureSubtype.GNOME);
+    creatureType = new CreatureType(CreatureMainType.HUMANOID);
+    creatureType.addSubtype(CreatureSubtype.GNOME);
     
     racialModifiers = new ArrayList<AbilityIncrease>();
     racialModifiers.add(new AbilityIncrease(2, AbilityType.CON));
@@ -171,12 +163,12 @@ public class CoreRulebookBuilder extends BookBuilder
     optionalLanguages.add(LanguageType.GOBLIN);
     optionalLanguages.add(LanguageType.ORC);
 
-    section.addItem(new RaceItem("Gnome", type, racialModifiers, size, speeds, vision, racialTraits, baseLanguages, optionalLanguages));
+    components.add(new RaceItem("Gnome", creatureType, racialModifiers, size, speeds, vision, racialTraits, baseLanguages, optionalLanguages));
 
     // Half-elf
-    type = new CreatureType(CreatureMainType.HUMANOID);
-    type.addSubtype(CreatureSubtype.ELF);
-    type.addSubtype(CreatureSubtype.HUMAN);
+    creatureType = new CreatureType(CreatureMainType.HUMANOID);
+    creatureType.addSubtype(CreatureSubtype.ELF);
+    creatureType.addSubtype(CreatureSubtype.HUMAN);
     
     racialModifiers = new ArrayList<AbilityIncrease>();
     racialModifiers.add(new AbilityIncrease(2, AbilityType.ANY));
@@ -215,12 +207,12 @@ public class CoreRulebookBuilder extends BookBuilder
     optionalLanguages.add(LanguageType.TERRAN);
     optionalLanguages.add(LanguageType.UNDERCOMMON);
 
-    section.addItem(new RaceItem("Half-elf", type, racialModifiers, size, speeds, vision, racialTraits, baseLanguages, optionalLanguages));
+    components.add(new RaceItem("Half-elf", creatureType, racialModifiers, size, speeds, vision, racialTraits, baseLanguages, optionalLanguages));
 
     // Half-orc
-    type = new CreatureType(CreatureMainType.HUMANOID);
-    type.addSubtype(CreatureSubtype.HUMAN);
-    type.addSubtype(CreatureSubtype.ORC);
+    creatureType = new CreatureType(CreatureMainType.HUMANOID);
+    creatureType.addSubtype(CreatureSubtype.HUMAN);
+    creatureType.addSubtype(CreatureSubtype.ORC);
 
     racialModifiers = new ArrayList<AbilityIncrease>();
     racialModifiers.add(new AbilityIncrease(2, AbilityType.ANY));
@@ -248,11 +240,11 @@ public class CoreRulebookBuilder extends BookBuilder
     optionalLanguages.add(LanguageType.GNOLL);
     optionalLanguages.add(LanguageType.GOBLIN);
 
-    section.addItem(new RaceItem("Half-orc", type, racialModifiers, size, speeds, vision, racialTraits, baseLanguages, optionalLanguages));
+    components.add(new RaceItem("Half-orc", creatureType, racialModifiers, size, speeds, vision, racialTraits, baseLanguages, optionalLanguages));
 
     // Halfling
-    type = new CreatureType(CreatureMainType.HUMANOID);
-    type.addSubtype(CreatureSubtype.HALFLING);
+    creatureType = new CreatureType(CreatureMainType.HUMANOID);
+    creatureType.addSubtype(CreatureSubtype.HALFLING);
 
     racialModifiers = new ArrayList<AbilityIncrease>();
     racialModifiers.add(new AbilityIncrease(2, AbilityType.DEX));
@@ -281,11 +273,11 @@ public class CoreRulebookBuilder extends BookBuilder
     optionalLanguages.add(LanguageType.GNOME);
     optionalLanguages.add(LanguageType.GOBLIN);
 
-    section.addItem(new RaceItem("Halfling", type, racialModifiers, size, speeds, vision, racialTraits, baseLanguages, optionalLanguages));
+    components.add(new RaceItem("Halfling", creatureType, racialModifiers, size, speeds, vision, racialTraits, baseLanguages, optionalLanguages));
 
     // Human
-    type = new CreatureType(CreatureMainType.HUMANOID);
-    type.addSubtype(CreatureSubtype.HUMAN);
+    creatureType = new CreatureType(CreatureMainType.HUMANOID);
+    creatureType.addSubtype(CreatureSubtype.HUMAN);
 
     racialModifiers = new ArrayList<AbilityIncrease>();
     racialModifiers.add(new AbilityIncrease(2, AbilityType.ANY));
@@ -324,114 +316,51 @@ public class CoreRulebookBuilder extends BookBuilder
     optionalLanguages.add(LanguageType.TERRAN);
     optionalLanguages.add(LanguageType.UNDERCOMMON);
 
-    section.addItem(new RaceItem("Human", type, racialModifiers, size, speeds, vision, racialTraits, baseLanguages, optionalLanguages));
+    components.add(new RaceItem("Human", creatureType, racialModifiers, size, speeds, vision, racialTraits, baseLanguages, optionalLanguages));
     
-    sections.put(section.getType(), section);
+    return new BookSection(type, components);
   }
 
   @Override
-  protected void addAlternateRacialTraits(SortedMap<BookSectionType, BookSection> sections)
+  protected BookSection createSkillsSection(BookSectionType type, SortedSet<BookComponent> components)
   {
-    // Core Rulebook doesn't contain any alternate racial traits
-  }
+    components.add(new SkillItem("Acrobatics", AbilityType.DEX, true, true));
+    components.add(new SkillItem("Appraise", AbilityType.INT, true, false));
+    components.add(new SkillItem("Bluff", AbilityType.CHA, true, false));
+    components.add(new SkillItem("Climb", AbilityType.STR, true, true));
+    components.add(new SkillItem("Craft", AbilityType.INT, true, false));
+    components.add(new SkillItem("Diplomacy", AbilityType.CHA, true, false));
+    components.add(new SkillItem("Disable Device", AbilityType.DEX, false, true));
+    components.add(new SkillItem("Disguise", AbilityType.CHA, true, false));
+    components.add(new SkillItem("Escape Artist", AbilityType.DEX, true, true));
+    components.add(new SkillItem("Fly", AbilityType.DEX, true, true));
+    components.add(new SkillItem("Handle Animal", AbilityType.CHA, false, false));
+    components.add(new SkillItem("Heal", AbilityType.WIS, true, false));
+    components.add(new SkillItem("Intimidate", AbilityType.CHA, true, true));
+    components.add(new SkillItem("Knowledge (arcana)", AbilityType.INT, false, false));
+    components.add(new SkillItem("Knowledge (dungeonneering)", AbilityType.INT, false, false));
+    components.add(new SkillItem("Knowledge (engineering)", AbilityType.INT, false, false));
+    components.add(new SkillItem("Knowledge (geography)", AbilityType.INT, false, false));
+    components.add(new SkillItem("Knowledge (history)", AbilityType.INT, false, false));
+    components.add(new SkillItem("Knowledge (local)", AbilityType.INT, false, false));
+    components.add(new SkillItem("Knowledge (nature)", AbilityType.INT, false, false));
+    components.add(new SkillItem("Knowledge (nobility)", AbilityType.INT, false, false));
+    components.add(new SkillItem("Knowledge (planes)", AbilityType.INT, false, false));
+    components.add(new SkillItem("Knowledge (religion)", AbilityType.INT, false, false));
+    components.add(new SkillItem("Linguistics", AbilityType.INT, false, false));
+    components.add(new SkillItem("Perception", AbilityType.WIS, true, false));
+    components.add(new SkillItem("Perform", AbilityType.CHA, true, false));
+    components.add(new SkillItem("Profession", AbilityType.WIS, false, false));
+    components.add(new SkillItem("Ride", AbilityType.DEX, true, true));
+    components.add(new SkillItem("Sense Motive", AbilityType.WIS, true, false));
+    components.add(new SkillItem("Sleight of Hand", AbilityType.DEX, false, true));
+    components.add(new SkillItem("Spellcraft", AbilityType.INT, false, false));
+    components.add(new SkillItem("Stealth", AbilityType.DEX, true, true));
+    components.add(new SkillItem("Survival", AbilityType.WIS, true, false));
+    components.add(new SkillItem("Swim", AbilityType.STR, true, true));
+    components.add(new SkillItem("Use Magic Device", AbilityType.CHA, false, false));
 
-  @Override
-  protected void addClasses(SortedMap<BookSectionType, BookSection> sections)
-  {
-    // TODO Auto-generated method stub
-  }
-
-  @Override
-  protected void addClassExtensions(SortedMap<BookSectionType, BookSection> sections)
-  {
-    // TODO Auto-generated method stub
-    
-  }
-
-  @Override
-  protected void addArchetypes(SortedMap<BookSectionType, BookSection> sections)
-  {
-    // TODO Auto-generated method stub
-
-  }
-
-  @Override
-  protected void addPrestigeClasses(SortedMap<BookSectionType, BookSection> sections)
-  {
-    // TODO Auto-generated method stub
-
-  }
-
-  @Override
-  protected void addFeats(SortedMap<BookSectionType, BookSection> sections)
-  {
-    // TODO Auto-generated method stub
-
-  }
-
-  @Override
-  protected void addEquipment(SortedMap<BookSectionType, BookSection> sections)
-  {
-    // TODO Auto-generated method stub
-
-  }
-
-  @Override
-  protected void addSpells(SortedMap<BookSectionType, BookSection> sections)
-  {
-    // TODO Auto-generated method stub
-
-  }
-
-  @Override
-  protected void addMonsters(SortedMap<BookSectionType, BookSection> sections)
-  {
-    // TODO Auto-generated method stub
-
-  }
-
-  @Override
-  protected void addSkills(SortedMap<BookSectionType, BookSection> sections)
-  {
-    BookSection section = new BookSection(BookSectionType.SKILLS);
-    
-    section.addItem(new SkillItem("Acrobatics", AbilityType.DEX, true, true));
-    section.addItem(new SkillItem("Appraise", AbilityType.INT, true, false));
-    section.addItem(new SkillItem("Bluff", AbilityType.CHA, true, false));
-    section.addItem(new SkillItem("Climb", AbilityType.STR, true, true));
-    section.addItem(new SkillItem("Craft", AbilityType.INT, true, false));
-    section.addItem(new SkillItem("Diplomacy", AbilityType.CHA, true, false));
-    section.addItem(new SkillItem("Disable Device", AbilityType.DEX, false, true));
-    section.addItem(new SkillItem("Disguise", AbilityType.CHA, true, false));
-    section.addItem(new SkillItem("Escape Artist", AbilityType.DEX, true, true));
-    section.addItem(new SkillItem("Fly", AbilityType.DEX, true, true));
-    section.addItem(new SkillItem("Handle Animal", AbilityType.CHA, false, false));
-    section.addItem(new SkillItem("Heal", AbilityType.WIS, true, false));
-    section.addItem(new SkillItem("Intimidate", AbilityType.CHA, true, true));
-    section.addItem(new SkillItem("Knowledge (arcana)", AbilityType.INT, false, false));
-    section.addItem(new SkillItem("Knowledge (dungeonneering)", AbilityType.INT, false, false));
-    section.addItem(new SkillItem("Knowledge (engineering)", AbilityType.INT, false, false));
-    section.addItem(new SkillItem("Knowledge (geography)", AbilityType.INT, false, false));
-    section.addItem(new SkillItem("Knowledge (history)", AbilityType.INT, false, false));
-    section.addItem(new SkillItem("Knowledge (local)", AbilityType.INT, false, false));
-    section.addItem(new SkillItem("Knowledge (nature)", AbilityType.INT, false, false));
-    section.addItem(new SkillItem("Knowledge (nobility)", AbilityType.INT, false, false));
-    section.addItem(new SkillItem("Knowledge (planes)", AbilityType.INT, false, false));
-    section.addItem(new SkillItem("Knowledge (religion)", AbilityType.INT, false, false));
-    section.addItem(new SkillItem("Linguistics", AbilityType.INT, false, false));
-    section.addItem(new SkillItem("Perception", AbilityType.WIS, true, false));
-    section.addItem(new SkillItem("Perform", AbilityType.CHA, true, false));
-    section.addItem(new SkillItem("Profession", AbilityType.WIS, false, false));
-    section.addItem(new SkillItem("Ride", AbilityType.DEX, true, true));
-    section.addItem(new SkillItem("Sense Motive", AbilityType.WIS, true, false));
-    section.addItem(new SkillItem("Sleight of Hand", AbilityType.DEX, false, true));
-    section.addItem(new SkillItem("Spellcraft", AbilityType.INT, false, false));
-    section.addItem(new SkillItem("Stealth", AbilityType.DEX, true, true));
-    section.addItem(new SkillItem("Survival", AbilityType.WIS, true, false));
-    section.addItem(new SkillItem("Swim", AbilityType.STR, true, true));
-    section.addItem(new SkillItem("Use Magic Device", AbilityType.CHA, false, false));
-
-    sections.put(section.getType(), section);
+    return new BookSection(type, components);
   }
 
 }
