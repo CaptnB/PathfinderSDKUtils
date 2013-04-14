@@ -39,7 +39,7 @@ public class CoreRulebookBuilder extends BookBuilder
 
   @Override
   @SuppressWarnings({"unchecked"})
-  protected BookSection createRacesSection(BookSectionType type, SortedSet<BookComponent> components)
+  protected BookSection createRacesSection(BookSectionType type, List<BookComponent> components)
   {
     CreatureType creatureType;
     List<AbilityIncrease> racialModifiers;
@@ -322,7 +322,7 @@ public class CoreRulebookBuilder extends BookBuilder
   }
 
   @Override
-  protected BookSection createSkillsSection(BookSectionType type, SortedSet<BookComponent> components)
+  protected BookSection createSkillsSection(BookSectionType type, List<BookComponent> components)
   {
     components.add(new SkillItem("Acrobatics", AbilityType.DEX, true, true));
     components.add(new SkillItem("Appraise", AbilityType.INT, true, false));
